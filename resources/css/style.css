@@ -53,6 +53,8 @@ form.row {
 
 
 /* 'Back to top' button */
+
+
 a[href="#top"] {
     color: white;
     text-decoration: none;
