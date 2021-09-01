@@ -22,6 +22,15 @@ div > .card {
     border-radius: 10%;
 }
 
+/* Manually set image height at large screen-size */
+@media only screen and (min-width: 990px){
+    .card > img{
+        border-radius: 10%;
+        max-height: 120px;
+    }
+}
+    
+
 /* Navbar*/
 
 body > nav {
