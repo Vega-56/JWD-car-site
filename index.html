@@ -12,7 +12,7 @@
     <meta name="description" content="Vintage cars available for hire to suit any occasion">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">VC</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,21 +21,21 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#car-section">Cars</a>
+                        <a class="nav-link text-white" href="#cars">Cars</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#enquiries">Enquiries</a>
+                        <a class="nav-link text-white" href="#enquiries">Enquiries</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-section">Contact</a>
+                        <a class="nav-link text-white" href="#contact-section">Contact</a>
                     </li>
                 </ul>
             
             </div>
         </div>
     </nav>
-    <header>
+    <header class="text-center mb-5">
         <h1>Vintage Cars For Hire</h1>
     </header>
     
@@ -44,41 +44,42 @@
         <article class="row">
             <div class="col">
 
-                <section id="cars-section" class="row" >
+                <section id="cars" class="row mb-5" >
+                    <h2>Car Listings</h2>
                     <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="/resources/images/vintagegreen.jpg" class="card-img-top w-100" alt="Vintage car with green paint">
+                        <div class="card mb-5">
+                            <img src="/resources/images/vintagegreen.jpg" class="card-img-top img-fluid" alt="Vintage car with green paint">
                             <div class="card-body">
                               <h5 class="card-title">Green Car</h5>
                               <p class="card-text">2-Door Vehicle</p>
-                              <p class="card-text">Available for $500 per day</p>
-                              <a href="#" class="btn btn-primary">Hire</a>
+
+                              
                             </div>
                           </div>
 
                     </div>
 
                     <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="/resources/images/vintagelightblue.jpg" class="card-img-top w-100" alt="Vintage car with blue paint">
+                        <div class="card mb-5">
+                            <img src="/resources/images/vintagelightblue.jpg" class="card-img-top img-fluid" alt="Vintage car with blue paint">
                             <div class="card-body">
                               <h5 class="card-title">Blue Car</h5>
                               <p class="card-text">2-Door Vehicle</p>
-                              <p class="card-text">Available for $400 per day</p>
-                              <a href="#" class="btn btn-primary">Hire</a>
+
+                              
                             </div>
                           </div>
 
                     </div>
 
                     <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="/resources/images/vintagesilver.jpg" class="card-img-top w-100" alt="Vintage car with silver paint">
+                        <div class="card mb-5">
+                            <img src="/resources/images/vintagesilver.jpg" class="card-img-top img-fluid" alt="Vintage car with silver paint">
                             <div class="card-body">
                               <h5 class="card-title">Silver Car</h5>
                               <p class="card-text">2-Door Vehicle</p>
-                              <p class="card-text">Available for $300 per day</p>
-                              <a href="#" class="btn btn-primary">Hire</a>
+
+                              
                             </div>
                           </div>
 
@@ -86,12 +87,11 @@
 
                     <div class="col-12 col-md-3">
                         <div class="card">
-                            <img src="/resources/images/vintagewhite.jpg" class="card-img-top w-100" alt="Vintage car with white paint">
+                            <img src="/resources/images/vintagered.jpg" class="card-img-top img-fluid" alt="Vintage car with white paint">
                             <div class="card-body">
                               <h5 class="card-title">White Car</h5>
                               <p class="card-text">2-Door Vehicle</p>
-                              <p class="card-text">Available for $200 per day</p>
-                              <a href="#" class="btn btn-primary">Hire</a>
+                              
                             </div>
                           </div>
 
@@ -100,16 +100,69 @@
                 </section>
     
     
-                <section id="enquiries">
-    
+                <section id="enquiries" class="row mb-5">
+                    <div class="col">
+                        <h2 class="mb-4">Enquiries</h2>
+                        <form class="row g-3 p-1">
+
+                            <div class="col-md-8">
+                                <label for="inputName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="inputName" name="name" required>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <label for="selectCar" class="form-label">Select a car</label>
+                                <select id="selectCar" class="form-select" name="selectedCar" required>
+                                    <option selected>Choose...</option>
+                                    <option value="Green car"></option>
+                                    <option value="Blue car"></option>
+                                    <option value="Silver car"></option>
+                                    <option value="White car"></option>>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" name="email" required>
+                            </div>
+
+                            
+
+                            <div class="col-md-12">
+                                <label for="inputComment" class="form-label">Comments:</label>
+                                <textarea class="form-control" id="inputComment" name="comment"></textarea>
+                            </div>
+
+                            
+                            
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-dark text-white">Submit</button>
+                            </div>
+                        </form>
+
+
+
+                    </div>
+                    
                 </section>
     
-                <section id="contact">
-    
+                <section id="contact" class="row">
+                    <h2>Contact</h2>
+                    <p><span class="fw-bold">Address:</span> 26 Car street, Fitzroy, VIC 3598</p>
+                    <p><span class="fw-bold">Phone:</span> 012 345 678</p>
+                    <p><span class="fw-bold">Email:</span> vc-vintagecars@gmail.com</p>
+                    <p><span class="fw-bold">Location:</span></p>
+                    <!-- map here -->
                 </section>
             </div>
+            <div class="d-flex justify-content-end">
+                <a href="#top" class="p-1">Back to top</a>
+            </div>
+            
         </article>
+        
     </main>
+    
     <footer class="text-center">Copyright @CV. All rights reserved 2021</footer>
 
     

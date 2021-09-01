@@ -1,4 +1,66 @@
 
+/* Sections */
+section{
+    margin-top: 5px;
+}
+
+
+
+/* Cards*/
 .card > img{
-    max-height: 120px;
+    border-radius: 10%;
+    min-height: 120px;
+    object-fit: fill;
+}
+
+
+div > .card {
+    border: 0px solid black;
+}
+
+.card > .card-body{
+    border-bottom: 1px solid black;
+    border-radius: 10%;
+}
+
+/* Navbar*/
+
+body > nav {
+    background-color: palegoldenrod;
+}
+
+.container-fluid > .navbar-brand{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nav-item > .nav-link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    -webkit-text-stroke: 0.5px black;
+}
+
+
+/* Header */
+
+body > header {
+    margin-top: 10%;
+}
+/* Enquiry Form */
+form.row {
+    background-color: palegoldenrod;
+}
+
+
+/* 'Back to top' button */
+a[href="#top"] {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    
+}
+
+a[href="#top"]:visited {
+    color: white;
 }
